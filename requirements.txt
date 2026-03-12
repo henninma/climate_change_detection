@@ -1,0 +1,25 @@
+# Core dependencies for Bayesian climate trend analysis
+
+# Bayesian inference
+pymc>=5.0.0
+arviz>=0.15.0
+pytensor>=2.10.0
+
+# Data manipulation
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Configuration
+pyyaml>=6.0
+
+# Jupyter for notebooks
+jupyter>=1.0.0
+ipykernel>=6.20.0
+
+# Additional utilities
+scipy>=1.10.0
+xarray>=2023.1.0

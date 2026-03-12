@@ -1,0 +1,45 @@
+# Configuration parameters for Bayesian trend analysis
+
+data:
+  # Path to temperature data file
+  temperature_file: "../data/temperature_data.csv"
+  # Date column name
+  date_column: "date"
+  # Temperature column name
+  temp_column: "temperature"
+  # Start year for analysis (null for all data)
+  start_year: null
+  # End year for analysis (null for all data)
+  end_year: null
+
+model:
+  # Model type: 'linear', 'hierarchical', 'changepoint'
+  type: "linear"
+  # Number of MCMC samples
+  n_samples: 2000
+  # Number of chains
+  n_chains: 4
+  # Number of tuning steps
+  n_tune: 1000
+  # Random seed for reproducibility
+  random_seed: 42
+
+priors:
+  # Prior for intercept (normal distribution)
+  intercept_mu: 15.0  # Expected baseline temperature (°C)
+  intercept_sigma: 10.0
+  # Prior for slope (normal distribution)
+  slope_mu: 0.0  # Expected trend (°C/year)
+  slope_sigma: 0.5
+  # Prior for noise (half-normal distribution)
+  sigma_sigma: 5.0
+
+output:
+  # Directory for results
+  results_dir: "../results"
+  # Save trace
+  save_trace: true
+  # Generate diagnostic plots
+  generate_plots: true
+  # Confidence intervals
+  credible_interval: 0.95
