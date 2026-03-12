@@ -50,4 +50,4 @@ If you use this code or data in your work, please credit:
 **Henning Åkesson**
 
 Example citation:
-> Åkesson, H. (2026). Bayesian trend analysis example for Norwegian climate. GitHub repository: https://github.com/henninma/climate_change_detection
+> Åkesson, H. (2026). Bayesian trend analysis to detect climate change patterns. GitHub repository: https://github.com/henninma/climate_change_detection
